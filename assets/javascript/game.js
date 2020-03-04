@@ -22,7 +22,7 @@ var crystal = {
 };
 // Score var
 
-var currentScore  = 0;
+var userScore  = 0;
 var targetScore   = 0;
 
 // wins and loss
@@ -44,35 +44,36 @@ var startGame = function () {
     crystal.purple.value    = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
     crystal.rainbow.value   = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
     // change html to update changes
+
+      // console.log
+      console.log("-------------------------------------------------------")
+      console.log("Target Score: " + targetScore);
+      console.log("Blue: " + crystal.blue.value + " | Red: " + crystal.green.value + " | Purple: " + crystal.purple.value + " | Rainbow: " + crystal.rainbow.value);
+      console.log("-------------------------------------------------------")
 }
-
-// console.log
-console.log("-------------------------------------------------------")
-console.log("Target Score: " + targetScore);
-console.log("Blue: " + crystal.blue.value + " | Red: " + crystal.green.value + " | Purple: " + crystal.purple.value + " | Rainbow: " + crystal.rainbow.value);
-console.log("-------------------------------------------------------")
-
 
 /// on click crystals
 
 // starts game
-startGame();
 
-$("#blue").click(function() {
-    alert("blue");
-});
+$(".crystal").click(function() {
+    var number =parseInt($(this).attr("data-value"));
+    console.log(number);
+    userScore += number;
+    $("#score-total").text(userScore);
+})
 
-$("#green").click(function() {
-    alert("green");
-});
+  function resetScore() {
+    startGame();
+    $("#targetNum-area").text(targetScore);
+    $("#blue").attr("data-value", crystal.blue.value);
+    $("#green").attr("data-value", crystal.green.value);
+    $("#purple").attr("data-value", crystal.purple.value);
+    $("#rainbow").attr("data-value", crystal.rainbow.value);
+  }
+  resetScore();
 
-$("#purple").click(function() {
-  alert("purple");
-});
-
-$("#rainbow").click(function() {
-  alert("rainbow");
-});
+  
 
 
 
