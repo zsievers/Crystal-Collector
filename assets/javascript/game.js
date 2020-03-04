@@ -35,7 +35,7 @@ var lossCount   = 0;
 var startGame = function () {
 
     // reset current score
-    var currentScore = 0;
+    userScore = 0;
     // set new target score 19-120
     targetScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
     // set dif values to crystals 1-12
@@ -54,15 +54,15 @@ var startGame = function () {
 
 /// on click crystals
 
-// starts game
-
 $(".crystal").click(function() {
     var number =parseInt($(this).attr("data-value"));
     console.log(number);
     userScore += number;
     $("#score-total").text(userScore);
+    userWin();
 })
 
+// function adding random values to each crystal
   function resetScore() {
     startGame();
     $("#targetNum-area").text(targetScore);
@@ -73,7 +73,34 @@ $(".crystal").click(function() {
   }
   resetScore();
 
-  
+  // check if user won or lost
+var userWin = function() {
 
+    // check if userScore is larger than targetScore
+    if (userScore > targetScore) {
+      alert("No soup for you! Try again.");
+      // add to counter
+      lossCount++
+      // add to html area
+      $("#loss-area").text("Losses: " + lossCount);
+      // restart game
+      startGame();
+      resetScore();
+    }
+    else if (userScore === targetScore) {
+      alert("You beat me! Nice job.");
+      // add to counter
+      winCount++;
+      // add to html area
+      $("#wins-area").text("Wins: " + winCount);
+       // restart game
+       startGame();
+       resetScore();
+       
+    }
+
+  
+}
+ 
 
 
