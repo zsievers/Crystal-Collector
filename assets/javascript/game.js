@@ -32,6 +32,8 @@ var lossCount   = 0;
 
 // functions
 
+
+
 var startGame = function () {
 
     // reset current score

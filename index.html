@@ -4,37 +4,22 @@
     <meta charset="UTF-8" />
     <title>Unit-4-Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <h1 id="title">Crystals Collector!</h1>
-    </header>
-    <br />
-    <div class="rules-content">
-      <ul>
-        <li>You will be given a random number at the start of the game.</li>
-        <br />
-        <li>
-          There are four crystals below. By clicking on a crystal you will add a
-          specific amount of points to your total score.
-        </li>
-        <br />
-        <li>
-          You win the game by matching your total score to random number, you
-          lose the game if your total score goes above the random number.
-        </li>
-        <br />
-        <li>
-          The value of each crystal is hidden from you until you click on it.
-        </li>
-        <br />
-        <li>
-          Each time when the game starts, the game will change the values of
-          each crystal
-        </li>
-      </ul>
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome, this is Crystals Collector!</h1>
+      <hr class="my-4">
+      <div class="rules">
+        <li>This is a simple memorization and strategy game. You will be given a random number at the start of the game.</li>
+        <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+        <li>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</li>
+        <li>The value of each crystal is hidden from you until you click on it.</li>
+        <li>Each time when the game starts, the game will change the values of each crystal</li>
+      </div>
+      <button class="btn btn-primary btn-lg" id="start-button">Let's Play!</button>
     </div>
 
     <div class="Container">
