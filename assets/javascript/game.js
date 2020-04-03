@@ -67,7 +67,7 @@ $(".crystal").click(function() {
 // function adding random values to each crystal
 function reset() {
   setup(); // values and number reset
-  $("#targetNum-area").text(targetScore);
+  $("#targetNum").text(targetScore);
   // $("#winText").text("");
   // $("#lossText").text(" ");
   $("#blue").attr("data-value", crystal.blue.value);

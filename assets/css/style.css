@@ -34,4 +34,37 @@ img {
     height: 100px;
 }
 
+#targetNum {
+    width: 20%;
+	height: 100px;
+	display: inline-block;
+	background-color: #e7dfac;
+	border-radius: 25px;
+	font-family: "Fjalla One", cursive;
+	font-size: 50px;
+	padding-top: 40px;
+	margin-right: 10px;
+}
+
+#score-total {
+    width: 20%;
+	height: 100px;
+	display: inline-block;
+	background-color: #d4c883;
+	border-radius: 25px;
+	font-family: "Fjalla One", cursive;
+	font-size: 50px;
+	color: #fff;
+	padding-top: 40px;
+	margin-left: 10px;
+}
+
+
+.win {
+    margin-left: auto;    
+}
+.loss {
+    margin-left: auto;
+}
+
 
