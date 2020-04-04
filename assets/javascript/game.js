@@ -8,11 +8,13 @@ var crystal = {
     name: "green",
     value: 0
   },
-  purple: {
-    name: "purple",
+  red: {
+    name: "red",
     value: 0
   },
-  rainbow: { name: "rainbow", value: 0 }
+  yellow: { 
+    name: "yellow", 
+    value: 0 }
 };
 // Score var
 
@@ -34,8 +36,8 @@ var setup = function() {
   // set dif values to crystals 1-12
   crystal.blue.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
   crystal.green.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-  crystal.purple.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-  crystal.rainbow.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+  crystal.red.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+  crystal.yellow.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
   // change html to update changes
 
   // console.log
@@ -44,12 +46,12 @@ var setup = function() {
   console.log(
     "Blue: " +
       crystal.blue.value +
-      " | Red: " +
+      " | Green: " +
       crystal.green.value +
-      " | Purple: " +
-      crystal.purple.value +
-      " | Rainbow: " +
-      crystal.rainbow.value
+      " | Red: " +
+      crystal.red.value +
+      " | Yellow: " +
+      crystal.yellow.value
   );
   console.log("-------------------------------------------------------");
 };
@@ -72,8 +74,8 @@ function reset() {
   // $("#lossText").text(" ");
   $("#blue").attr("data-value", crystal.blue.value);
   $("#green").attr("data-value", crystal.green.value);
-  $("#purple").attr("data-value", crystal.purple.value);
-  $("#rainbow").attr("data-value", crystal.rainbow.value);
+  $("#red").attr("data-value", crystal.red.value);
+  $("#yellow").attr("data-value", crystal.yellow.value);
 }
 reset();
 
@@ -100,5 +102,4 @@ var userWin = function() {
     reset();
   }
 };
-
 
