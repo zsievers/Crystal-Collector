@@ -1,32 +1,44 @@
 body {
     background: lightblue;
+    font-family: "Raleway", sans-serif;
 }
 .container {
     background-color: white;
     margin: auto;
-    width: 60%;
+    width: 55%;
     height: 100%;
     text-align: center;
 }
 
 .header {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 60px;
 }
 
+hr {
+    width: 75%;
+}
+
 .rules {
-    background-color: none;
     margin: auto;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
+    width: 62%;
+    line-height: 20px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 p {
     font-size: 15px;
+
+}
+
+#crystals-area {
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 img {
@@ -36,35 +48,39 @@ img {
 
 #targetNum {
     width: 20%;
-	height: 100px;
 	display: inline-block;
 	background-color: #e7dfac;
 	border-radius: 25px;
-	font-family: "Fjalla One", cursive;
-	font-size: 50px;
-	padding-top: 40px;
-	margin-right: 10px;
+	font-weight: 900;
+    font-size: 50px;
+    color: black;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 #score-total {
     width: 20%;
-	height: 100px;
 	display: inline-block;
 	background-color: #d4c883;
 	border-radius: 25px;
-	font-family: "Fjalla One", cursive;
+	font-weight: 900;
 	font-size: 50px;
-	color: #fff;
-	padding-top: 40px;
-	margin-left: 10px;
+    color: black;
+    margin-bottom: -5px;
+    padding-bottom: 5px;
 }
 
 
 .win {
-    margin-left: auto;    
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    color: #eab797;
 }
 .loss {
-    margin-left: auto;
+    padding-bottom: 15px;
+    font-size: 30px;
+    color: #eab797;
 }
 
 
