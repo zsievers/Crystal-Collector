@@ -1,9 +1,14 @@
 body {
-    background: lightblue;
+    background-image: url("../images/tiles.jpg");
+    background-size: cover;
     font-family: "Raleway", sans-serif;
+
 }
 .container {
-    background-color: white;
+    background:rgb(253, 252, 231);
+    border: white;
+    border-width: thin;
+    border-style: solid;
     margin: auto;
     width: 55%;
     height: 100%;
@@ -49,7 +54,7 @@ img {
 #targetNum {
     width: 20%;
 	display: inline-block;
-	background-color: #e7dfac;
+	background-color: seashell;
 	border-radius: 25px;
 	font-weight: 900;
     font-size: 50px;
@@ -61,7 +66,7 @@ img {
 #score-total {
     width: 20%;
 	display: inline-block;
-	background-color: #d4c883;
+	
 	border-radius: 25px;
 	font-weight: 900;
 	font-size: 50px;
@@ -73,14 +78,14 @@ img {
 
 .win {
     padding-top: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     font-size: 30px;
-    color: #eab797;
+    color: navy;
 }
 .loss {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     font-size: 30px;
-    color: #eab797;
+    color: navy;
 }
 
 
